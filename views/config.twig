@@ -1,0 +1,29 @@
+{% extends 'admin.base' %}
+
+{% block title %}Microsoft Graph 邮件配置{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-6">
+      {% if userInfo.displayName is defined %}
+        <div class="callout callout-success">
+          成功连接至 Microsoft Graph API
+        </div>
+      {% else %}
+        <div class="callout callout-danger">
+          连接至 Microsoft Graph API 时出错
+        </div>
+      {% endif %}
+      <div class="card card-primary">
+        <div class="card-header">
+          <h3 class="card-title">已连接的用户信息</h3>
+        </div>
+        <div class="card-body">
+          <pre>
+            {{ userInfoReadable }}
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

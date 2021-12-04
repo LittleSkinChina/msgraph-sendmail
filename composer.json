@@ -1,0 +1,5 @@
+{
+    "require": {
+        "dcblogdev/laravel-microsoft-graph": "^3.1"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "msgraph-sendmail",
+  "version": "0.1.0",
+  "title": "MS Graph Sendmail",
+  "description": "使用 Microsoft Graph API 发送邮件",
+  "author": "prin",
+  "url": "https://github.com/prinsss",
+  "namespace": "MsGraphSendmail",
+  "require": {
+    "blessing-skin-server": "^6"
+  },
+  "enchants": {
+    "config": "Configuration",
+    "icon": {
+      "fa": "mail-bulk",
+      "bg": "teal"
+    }
+  }
+}
